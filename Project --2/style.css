@@ -1,0 +1,1149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&family=Montserrat:ital,wght@0,400;1,200&family=Suranna&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+body{
+    height: auto;
+    margin: 0;
+    font-family: 'Montserrat-UltraLight', Arial, sans-serif;
+    position: relative;
+}
+
+li{
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+    color: aqua;
+}
+
+img{
+    display: block;
+    max-width:100%;
+    height: auto;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Suranna',serif;
+    color: #161d27;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+
+}
+
+.header-tab{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.fixed-layer{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    max-width: 1100px;
+    margin: 2em 1em;
+    transform: translate(-50%,0);
+    z-index: 1000;
+}
+
+.fixed-layer.sticky{
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    /* transform: translate(0,0); */
+    left: 50%;
+    background-color:#020202;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    flex: 0 1 60vw;
+    justify-content: space-between;
+    text-transform: uppercase;
+    left: 50%;
+    z-index: 1000;
+    font-weight: 400;
+ 
+}
+
+nav a{
+    color: #fff;
+
+}
+
+.layer-info{
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 10%;
+    flex-direction: column;
+}
+
+.layer-info-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%,50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.layer-info-text h2{
+    font-family: 'Montez',sans-serif;
+    color: #FCDA9A;
+    text-transform: capitalize;
+    font-size: 4em;
+    font-weight: 400;
+}
+
+.layer-info-text h3{
+    color: #fff;
+    font-size: 4em;
+    font-weight: 400;
+}
+
+
+.Opening{
+    text-transform: uppercase;
+    margin: 1em 0;
+
+}
+
+.days{
+    line-height: 1.7;
+}
+.Hours{
+    color:#949FAD ;
+}
+
+.img-left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 50vw;
+}
+
+.img-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50vw;
+    z-index: -10;
+}
+
+.img-center{
+    position: absolute;
+    top: 100%;
+    left:50%;
+    transform: translate(-50%,350%);
+    width: 30%;
+    height: auto;
+}
+
+
+main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.our-story{
+    background: url(	http://www.pixel-industry.com/html/royal-plate/img/pics/bkg-img1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.frame-story{
+    background:url(http://www.pixel-industry.com/html/royal-plate/img/pics/bkg-img2.png);
+    width: 40vw;
+    height: 60vh;
+    border: 20px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.frame-story h2{
+    font-family: 'Montez',sans-serif;
+    text-transform: capitalize;
+    color: #C28E80;
+    font-weight: 400;
+    font-size: 3em;
+}
+
+.frame-story h3{
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+.frame-story p{
+    width: 70%;
+    line-height:1.5;
+    color: #777777;
+    letter-spacing: .5px;
+}
+
+.element{
+    background-color: #B48C80;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.element::before{
+    position: absolute;
+    content:"";
+    width: 30px;
+    height: 1px;
+    background-color: #B48C80;
+    top: 50%;
+    left: -50px;
+}
+.element::after{
+    position: absolute;
+    content:"";
+    width: 30px;
+    height: 1px;
+    background-color: #B48C80;
+    top: 50%;
+    left: 30px;
+}
+
+.story-panel-1{
+    margin-right: 1em;
+}
+
+.story-panel-2{
+    margin-left: 1em;
+}
+
+
+/* middle articles between main sections */
+
+
+.middle-infos{
+    background: url(	http://www.pixel-industry.com/html/royal-plate/img/pics/bkg-img3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    line-height: 1;
+}
+
+.middle-infos h2{
+    color: #FCDA9A;
+    font-family: 'Montez',sans-serif;
+    text-transform: capitalize;
+    font-size: 4em;
+    font-weight: 400;
+}
+
+.middle-infos h3{
+    color: #fff;
+    font-weight: 400;
+    font-size: 3em;
+}
+
+.devider-info{
+    color: #FCDA9A;
+    font-size: 2em; 
+    position: relative;
+    
+}
+
+.devider-info .left{
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: #FCDA9A;
+    right: 150%;
+    top: 30%;
+
+}
+
+.devider-info .left::after{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    background-color: #FCDA9A;
+    right: 0%;
+    top:5px;
+
+}
+
+.devider-info .right{
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: #FCDA9A;
+    left: 150%;
+    top: 30%;
+
+}
+
+.devider-info .right::after{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    background-color: #FCDA9A;
+    left: 0%;
+    top:5px;
+
+
+
+}
+
+.menu{
+    max-width: 1100px;
+    width: 100%;
+    margin: 4em auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-img-section{
+    width: 100%;
+    float: left;
+}
+
+.gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* flex-wrap: wrap; */
+
+}
+
+.gallery-item{
+    position: relative;
+}
+
+.gallery-item::before{
+    font-family:"FontAwesome";
+    content: '\f002';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    color: #fff;
+    /* z-index: 1000; */
+    font-size: 1.2em;
+    transform: translate(-50%,-50%);
+    transition: all .4s ease-in;
+    cursor: pointer;
+}
+.gallery-item::after{
+
+    content: "";
+    background-color: rgba(0, 0, 0, .3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    transform: scale(0);
+    transition: all .4s ease-in;
+}
+
+.gallery-item:hover::before{
+    opacity: 1;
+
+}
+.gallery-item:hover::after{
+
+    transform: scale(1);
+}
+
+
+.gallery li img{
+    width: 285px;
+    height: 100%;
+    z-index: 1000000;
+}
+
+
+
+
+.menu-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left:3em;
+    line-height: 1;
+}
+
+
+.menu-text h2{
+    font-family: 'Montez',sans-serif;
+    color: #B48C80;
+    text-transform: capitalize;
+    font-size: 2.5em;
+    font-weight: 400;
+    display: inline;
+
+}
+.menu-text h3{
+
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: 400;
+    display: inline;
+}
+
+.menu-price-list{
+    /* float: left; */
+    width: 100%;
+    height: 50vh;
+}
+
+.menu-items li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* font-size: 2em; */
+
+    margin-bottom:2em;
+}
+
+.menu-item-description{
+    max-width: 350px;
+    width: 100%;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+}
+
+.menu-item-description h5{
+    font-size: 1.4em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #161d27;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+}
+
+.menu-item-description p{
+    font-size: .9em;
+    color: #777777;
+}
+
+.menu-price{
+    font-size: 2em;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    font-family: 'Montez',sans-serif;
+    color: #B48C80;
+}
+
+.menu-price p{
+    font-size: 40px;
+    padding: .5em 0;
+}
+
+.modal-gallery{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 100vh;
+    background-color: rgba(0, 0, 0, .7);
+   
+}
+
+.modal-content{
+
+    position: relative;
+    max-width:1100px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    
+}
+
+.close{
+    position: absolute;
+    top: 100px;
+    right:100px;
+    color: #fff;
+    font-size:4em;
+}
+
+.close:hover,.close:focus{
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlides{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.mySlides img{
+    max-height: 900px;
+    height: auto;
+    width: auto;
+    max-width: auto;
+}
+
+.prev,.next{
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
+    transform: translate(0,-50%);
+    user-select: none;
+}
+
+.next{
+    right: 0;
+ 
+}
+
+.info-1{
+    background: url(http://www.pixel-industry.com/html/royal-plate/img/pics/bkg-img4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+
+}
+
+
+
+.catering{
+    max-width:1200px;
+    /* width: 100%; */
+    height: 700px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.catering-slider{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* overflow: hidden; */
+    scroll-behavior: smooth;
+    position: relative;
+    transition: transform .5s;
+}
+
+
+.cater{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+    padding: 5em 0;
+    /* width: 70%; */
+    margin-right: 2em;
+    padding: 2em;
+
+
+    position: absolute;
+
+}
+
+
+.catering-img{
+    width:600px;
+    height: 100%;
+   
+    position: relative;
+}
+
+.catering-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.catering-info{
+    width: 44%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2em;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.catering-titles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+
+.catering-titles h2{
+    font-family: 'Montez',sans-serif;
+    color: #B48C80;
+    text-transform: capitalize;
+    font-size: 2.5em;
+    font-weight: 400;
+    display: inline;
+
+}
+
+.catering-titles h3{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: 400;
+    /* display: inline; */
+}
+
+.catering-description ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.catering-description li{
+    /* width: 50%; */
+    text-align: center;
+    font-size: 1.1em;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+    color: #777777;
+
+    list-style: disc;
+    /* padding: 0 1em; */
+    margin: 0 1em;
+    margin-bottom: 1em;
+}
+
+.catering-description li::marker{
+    color: #B48C80;
+}
+
+.catering-description p{
+    font-size: 1.1em;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+    color: #777777;
+    margin-bottom: 2em;
+}
+.more-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.more-details a{
+    font-size: 1.5em;
+    font-family: 'Suranna',serif;
+    color: #161d27;
+    text-decoration: none;
+    border-bottom: 1px solid #b48c80;
+    padding-bottom: 1px;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.more-details a:hover{
+    color: #b48c80;
+}
+
+.more-details a i{
+    font-size: .5em;
+    margin-left: 1em;
+    align-items: center;
+}
+
+.controls-catering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 82%;
+    left: 67.5%;
+    margin: 1em 0;
+    margin-bottom: 5em;
+
+}
+
+.control{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #b48c80;
+    opacity: .5;
+    margin: 0 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.controls-catering.control{
+    cursor: pointer;
+}
+
+.control.active{
+    opacity: 1;
+}
+
+.control:hover{
+    opacity: .8;
+}
+/* .active-1 is for sliding from js  */
+.active-1{
+    transform: translateX(+100%);
+}
+
+.info-2{
+    background: url(http://www.pixel-industry.com/html/royal-plate/img/pics/bkg-img5.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+}
+
+footer{
+    width: 100%;
+}
+
+.footer-part-1{
+    max-width: 1200px;
+    width: 100%;
+    margin: 2em auto;
+}
+
+.reservation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.image-1{
+    width:33.33%;
+    height: 100%;
+}
+
+
+
+.booking{
+    width: 33.33%;
+    padding: 0 1em;
+}
+
+.headings{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2em;
+    line-height: 1;
+}
+
+.headings h2{
+    font-family: 'Montez',sans-serif;
+    color: #B48C80;
+    text-transform: capitalize;
+    font-size: 2.5em;
+    font-weight: 400;
+    /* display: inline; */
+}
+
+.headings h3{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: 400;
+    /* display: inline; */
+}
+.booking-body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2em;
+
+}
+
+.general-settings{
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+
+.general-settings input{
+    width: 100%;
+    padding: 0 0 0 33px;
+    height: 40px;
+    appearance: none;
+    color: #777;
+    border: 1px solid #CCC; 
+    font-weight: 600;
+    font-family:'Montserrat',Arial, Helvetica, sans-serif;
+    font-size:15px;
+    position: relative;
+}
+
+.general-settings select{
+    width: 100%;
+    padding: 0 0 0 33px;
+    height: 40px;
+    appearance: none;
+    color: #777;
+    border: 1px solid #CCC; 
+    font-weight: 600;
+    font-family:'Montserrat',Arial, Helvetica, sans-serif;
+    font-size:15px;
+    position: relative;
+}
+
+.button{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.button input{
+    width: 100%;
+    padding: 0 0 0 33px;
+    height: 40px;
+    appearance: none;
+    color: #fff;
+    border: 1px solid #CCC; 
+    background-color: #161D27;
+    font-weight: 400;
+    font-family:'Montserrat',Arial, Helvetica, sans-serif;
+    font-size:15px;
+    text-transform: uppercase;
+
+}
+
+.image-2{
+    width:33.33%;
+    height: 100%;
+    padding: 0 2em;
+}
+
+
+.image-2 img{
+    width: 100%;
+}
+.image-1 img{
+    width: 100%;
+
+}
+
+
+.name::before{
+    font-family: 'FontAwesome';
+    content: "\f007";
+    font-size: 14px;
+    position: absolute;
+    display: block;
+    top: 12px;
+    left: 13px;
+    z-index: 10;
+    color: #b48c80;
+}
+.email::before{
+    font-family: 'FontAwesome';
+    content: "\f003";
+    font-size: 14px;
+    position: absolute;
+    display: block;
+    top: 12px;
+    left: 13px;
+    z-index: 10;
+    color: #b48c80;
+}
+.date::before{
+    font-family: 'FontAwesome';
+    content: "\f073";
+    font-size: 14px;
+    position: absolute;
+    display: block;
+    top: 12px;
+    left: 13px;
+    z-index: 10;
+    color: #b48c80;
+}
+.time::before{
+    font-family: 'FontAwesome';
+    content: "\f017";
+    font-size: 14px;
+    position: absolute;
+    display: block;
+    top: 12px;
+    left: 13px;
+    z-index: 10;
+    color: #b48c80;
+}
+.people-size::before{
+    font-family: 'FontAwesome';
+    content: "\f0c0";
+    font-size: 14px;
+    position: absolute;
+    display: block;
+    top: 12px;
+    left: 13px;
+    z-index: 10;
+    color: #b48c80;
+}
+
+.instagram{
+    width: 100%;
+    /* margin-bottom: 2em; */
+    background-color: #161D27;
+    
+}
+
+.instagram-text{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.instagram-text p{
+    color: #ccd4dc;
+    margin-bottom: 1em;
+}
+
+.instagram-text h3{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 36px;
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    background-color: #0b0e13;
+    background-image: url(http://www.pixel-industry.com/html/royal-plate/img/pics/footer-bkg-img1.png), url(http://www.pixel-industry.com/html/royal-plate/img/pics/footer-bkg-img2.png);
+    background-repeat: no-repeat;
+    background-position: left 60px, right 60px;
+    color: #fff;
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40vh;
+    flex-direction: column;
+}
+
+
+.restaurant-info{
+    line-height:2;
+}
+
+
+.restaurant-info img{
+    display: inline;
+    margin-bottom: 1em;
+}
+
+.contact-info-list li{
+    color: #acb8c4;
+    font-size: 14px;
+    letter-spacing: .5px;
+    font-weight: 400;
+}
+
+.contact-info-list li span{
+    color: #fcda9a;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.footer-2{
+    display: flex;
+    max-width:1100px;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 5em;
+    justify-content: space-between;
+}
+
+.restaurant-social{
+    display: flex;
+    width: 200px;
+    /* justify-content: space-between; */
+}
+
+.social{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.social li{
+    width: 40px;
+    height: 40px;
+    background-color: #1D2026;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+}
+
+.social li:hover{
+    background-color: #2B2F35;
+    color: #fcda9a;
+}
+
+.newslettersubmit{
+    display: flex;
+    
+}
+
+.newslettersubmit .email{
+    width: 270px;
+    height: 40px;
+    line-height: 37px;
+    padding-left: 20px;
+    font-size: 13px;
+    color: #acb8c4;
+    background-color: #1d2026;
+    border: none;
+    border-radius: 0;
+    margin-right: .5em;
+}
+
+.newslettersubmit .email::placeholder{
+    color: #acb8c4;
+    font-size: 15px;
+}
+
+.newslettersubmit .submit{
+    width:150px;
+    text-transform: uppercase;
+    background-color: #FCDA9A;
+    color: #000;
+    border: none;
+    font-size: 13px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight:600;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.newslettersubmit .submit:hover{
+    background-color: #B48C80;
+    color: #fff;
+}
+
+
+
+.copyrights{
+    width: 100%;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    background-color: #0B0E13;
+    border-top:1px solid #161d27;
+}
+
+.rights-menu{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    padding: 1em 0;
+    margin: 0 auto;
+    background-color: #0B0E13;
+
+}
+
+
+.rights{
+    font-size: 15px;
+    color: #7f848a;
+
+}
+
+.rights-menu .menu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.rights-menu .menu li a{
+    color: #7f848a;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+
+.menu li a:hover{
+    color: #fcda9a;
+}
