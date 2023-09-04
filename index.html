@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link
+    rel="stylesheet"
+    data-purpose="Layout StyleSheet"
+    title="Web Awesome"
+    href="/css/app-wa-8c8d788ad0ee06dbc9619ff907c22651.css?vsn=d"
+  >
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+    <title>Star Wars & Website</title>
+</head>
+<body>
+    <!-- #141519 color background -->
+    <header class="d-flex">
+        <nav>
+
+            <a href="#">Home</a>
+            <a href="#">Movie</a>
+            <a href="#">Actors</a>
+        </nav>
+
+        <section class="social">
+            <a href="#"><i class="fa-brands fa-twitter" ></i></a>  
+            <a href="#"><i class="fa-brands fa-youtube" ></i></a>
+            <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+        </section>
+
+    </header>
+    <!-- https://code-with-randome.notion.site/code-with-randome/Master-Frontend-Development-Zero-to-Hero-dfc60a6d24b244db9b3387bf906d0386 -->
+    <main class="d-flex">
+        <section class="name">
+            <h2 id="heroName" class="movie-hero">Darth Vader</h2>
+            <div class="more-info">
+                <a href="#">More info</a>
+                <i class="fa-sharp fa-light fa-arrow-right-long"></i>
+            </div>
+        </section>  
+
+        <section class="image-hero">
+            <img class="fixed-img-size" id="heroImage" src="darth vader.png" alt="" width="400">
+        </section>
+
+        <section class="desc-hero" id="mainHeroDesc">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum sed obcaecati amet distinctio veniam debitis, beatae vel quasi dignissimos odit fuga, repellendus necessitatibus adipisci nostrum laboriosam unde, exercitationem ipsam. Quia?</p>
+        </section>
+    </main>
+
+    <article class="slider">
+        <div class="left-slide left" id="previousHero">
+           <a href="#"> <i class="fa-light fa-angle-left"></i></a>
+            <div class="name-hero-desc">
+                <h3 id="heroName" class="hero-name">Han solo</h3>
+                <h4 id="heroDesc" class="hero-desc">Captain of the Millenium falcon</h4>
+            </div>
+        </div>
+        <div class="right-side right" id="nextHero">
+            <div class="hero-img">
+                <img id="nextHeroImage" class="fixed-img-small" src="han-solo.png" alt="" width="170">
+            </div>
+            <a href="#"><i class="fa-light fa-angle-right"></i></a>
+        </div>
+
+    </article>
+
+    <footer>
+        <section class="footer-nav">
+            <nav>
+                <a href="#">images</a>
+                <a href="#">videos</a>
+                <a href="#">Blog</a>
+            </nav>
+            <div class="dots">
+
+            </div>
+            <div class="logo" >
+                <img  src="logo-1.png" alt="" width="100px">
+            </div>
+        </section>
+    </footer>
+
+    <div class="fig">
+        <div class="shapes shape"></div>
+        <div class="shapes shape"></div>
+        <div class="shapes shape"></div>
+
+    </div>
+
+<script src="app.js"></script>
+    <script>
+
+        fetch('https://swapi.dev/api/people/1/')
+            .then(response => response.json())
+            .then(data=>{
+                console.log(data)
+            })
+            /*
+                eventListener
+                math.random()
+                fetch() swapi.dev pokeapi.co
+                .then
+                .then
+                queryselectors(
+
+                )
+
+            */
+           
+    </script>
+
+</body>
+</html>
